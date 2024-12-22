@@ -4,7 +4,7 @@
     "slug": "cleaning-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "scheme": "cleaningapp",
@@ -14,8 +14,9 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#000"
+      },
+      "package": "com.anonymous.cleaningapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -25,11 +26,17 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#ffffff",
-          "image": "./assets/splash-icon.png"
+          "image": "./assets/logo-splash.png",
+          "backgroundColor": "#000",
+          "resizeMode": "cover"
         }
       ],
       "react-native-edge-to-edge"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "147f08d5-9137-4524-b65d-a018134b2a49"
+      }
+    }
   }
 }
