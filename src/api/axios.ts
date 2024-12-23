@@ -28,7 +28,6 @@ export const apiRequest = async <T>(
   requiresAuth: boolean = true
 ): Promise<T> => {
   try {
-    console.log(data);
     const config: AxiosRequestConfig = {
       url: endpoint,
       method,
